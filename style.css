@@ -40,3 +40,8 @@ header h1{
 .right{
     flex-basis: 70%;
 }
+
+.computer-choices img{
+    transform: rotateX(180deg);
+    max-width: 15rem;
+}
