@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Elixia';
+    src: url(./fonts/ELIXIA.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Elixia';
+}
+
+html{
+    font-size: 62.5%;
+}
