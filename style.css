@@ -35,13 +35,50 @@ header h1{
 
 .left{
     flex-basis: 30%;
+
 }
 
 .right{
     flex-basis: 70%;
 }
 
+.computer-choices,.player-choices{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .computer-choices img{
-    transform: rotateX(180deg);
+    position: relative;
     max-width: 15rem;
+    margin: .5rem;
+    transform: scale(1) rotateX(180deg);
+    box-shadow: 0 0 8px 1px rgba(15, 15, 15, 0.5);
+    transition: transform .7s ease;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.computer-choices img:hover{
+    transform: scale(1.2) rotateX(180deg);
+    box-shadow: 0 0 8px 1px rgba(248, 11, 11, 0.719);
+    z-index: 1;
+    
+}
+
+.player-choices img{
+    position: relative;
+    max-width: 15rem;
+    margin: .5rem;
+    transform: scale(1);
+    box-shadow: 0 0 8px 1px rgba(15, 15, 15, 0.5);
+    transition: transform .7s ease;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.player-choices img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 8px 1px rgba(253, 253, 253, 0.719);
+    z-index: 1;
 }
