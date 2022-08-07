@@ -9,10 +9,12 @@
     box-sizing: border-box;
     font-family: 'Elixia';
     color: #ffd166;
+    border: 2px solid red;
 }
 
 html{
     font-size: 62.5%;
+    background-color: #cad2c5;
 }
 
 header{
@@ -23,4 +25,18 @@ header{
 
 header h1{
     padding: 1.5rem;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left{
+    flex-basis: 30%;
+}
+
+.right{
+    flex-basis: 70%;
 }
